@@ -1,4 +1,4 @@
-# Dockerized Symfony
+# [Dockerized Symfony](https://jump24.co.uk/journal/turbocharged-php-development-with-xdebug-docker-and-phpstorm/)
 This is a complete stack for running Symfony application into [Docker](https://docs.docker.com/) container using [Docker Compose](https://docs.docker.com/compose/) tools
 
 ## Requirements
