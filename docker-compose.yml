@@ -9,7 +9,7 @@ services:
       - .env
     volumes:
       - ${SF_APP_PATH}:/var/www/app:cached
-      - ./docker/nginx/app.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./docker/nginx/app.conf:/etc/nginx/conf.d/default.conf
     ports:
       - "8080:80"
     container_name: nginx
