@@ -55,7 +55,13 @@ services:
     container_name: pgsql
     networks:
       - internal
+    volumes:
+      - pgsql-data:/var/lib/postgresql/data
 
 networks:
   internal:
     name: app-network
+
+volumes:
+  pgsql-data:
+    name: pgsql-data
