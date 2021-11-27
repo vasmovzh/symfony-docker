@@ -33,6 +33,7 @@ services:
       - ${SF_APP_PATH}:/var/www/app:cached
       - ./docker/php/conf/php.ini:/usr/local/etc/php/conf.d/php.ini:ro
       - ./docker/php/conf/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini:ro
+      - ./docker/php/conf/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini:ro
     ports:
       - "9000:9000"
     working_dir: /var/www/app

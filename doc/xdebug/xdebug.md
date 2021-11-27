@@ -3,16 +3,19 @@ The steps bellow must be performed after deployment of local environment and lau
 1. Open `Settings` (`Ctrl + Alt + S`) or `Preferences` (`⌘ + ,`)
 2. Go to `Languages & Frameworks`, `PHP`, `Debug`
     ![](1.png)
-    - set value `9001` for `Debug port` field
+    - set value `9003` for `Debug port` field  
+   (or another specific value due to `EXTERNAL_XDEBUG_PORT` in your `.env` file)
 3. Go to `DBGp Proxy` there
     ![](2.png)
-    - set value `PHPSTORM` for `IDE key` field
+    - set value `PHPSTORM` for `IDE key` field (or your specific value in [`xdebug.ini`](../../docker/php/conf/xdebug.ini))
     - set value `localhost` (or your specific domain) for `Host` field
-    - set value `9001` for `Port` field
+    - set value `9003` for `Port` field  
+      (or another specific value due to `EXTERNAL_XDEBUG_PORT` in your `.env` file)
 4. Then go to `Servers` (one level higher in settings hierarchy -> `Languages & Frameworks`, `PHP`, `Servers`)
     ![](3.png)
     - add new server with `+`
-        - set value `docker-server` for `Name` field
+        - set value `docker-server` for `Name` field  
+      (or your specific value due to `PHP_IDE_CONFIG` in your `.env` file)
         - set value `localhost` (or your specific domain) for `Host` field
         - set value `80` for `Port` field
         - map the path to your application to directory `/var/www/app` into container

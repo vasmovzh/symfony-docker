@@ -38,4 +38,4 @@ Have a look at the [docker-compose.yml](docker-compose.yml) file, here are the `
 
 All images based on [alpine linux](https://alpinelinux.org/) with its [packages](https://pkgs.alpinelinux.org/packages)
 ## Use xdebug
-Don't forget to configure your IDE with xdebug. For configuring PhpStorm see this [document](doc/xdebug/xdebug.md)
+Don't forget to configure your IDE with xdebug. For configuring IDE see this [document](doc/xdebug/xdebug.md)

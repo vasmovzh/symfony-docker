@@ -26,8 +26,8 @@ RUN apk add --update --no-cache \
 RUN docker-php-ext-install gd intl pdo_pgsql xsl zip
 
 # Installing complex required extensions
-RUN yes "" | pecl install -a amqp redis
-RUN docker-php-ext-enable amqp redis
+RUN yes "" | pecl install -a amqp redis xdebug
+RUN docker-php-ext-enable amqp redis xdebug
 
 # Installing composer
 RUN EXPECTED_SIGNATURE="$(wget -q -O - https://composer.github.io/installer.sig)" && \
