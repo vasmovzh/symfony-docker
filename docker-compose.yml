@@ -59,6 +59,18 @@ services:
     volumes:
       - pgsql-data:/var/lib/postgresql/data
 
+  mailer:
+    container_name: mailer
+    image: schickling/mailcatcher
+    ports:
+      - "1025:1025"
+      - "1080:1080"
+    networks:
+      - internal
+    links:
+      - nginx
+      - php
+
 networks:
   internal:
     name: app-network
