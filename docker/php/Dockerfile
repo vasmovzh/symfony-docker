@@ -12,6 +12,7 @@ RUN apk add --update --no-cache \
     g++ \
     gcc \
     git \
+    graphviz-dev \
     icu-dev \
     libpng-dev \
     libxslt-dev \
